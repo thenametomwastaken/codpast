@@ -1,0 +1,15 @@
+<head>
+  <title>cast</title>
+</head>
+
+<body>
+  {{> search}}
+</body>
+
+<template name="search">
+  <input type="text">
+  <button>Search</button>
+  {{#each results}}
+    <a href={{url}}>{{text}}</a>
+  {{/each}}
+</template>
