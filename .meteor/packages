@@ -21,3 +21,5 @@ insecure                # Allow all DB writes from clients (for prototyping)
 
 http
 peerlibrary:xml2js
+semantic:ui
+flemay:less-autoprefixer

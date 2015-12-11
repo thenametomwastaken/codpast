@@ -1,0 +1,32 @@
+<head>
+  <title>cast</title>
+</head>
+
+<body>
+  {{> search}}
+</body>
+
+<template name="search">
+  <h2>Search for some podcasts</h2>
+  <form class="ui form">
+    <div class="field">
+      <input type="text">
+      <button class="ui button">Search</button>
+    </div>
+  </form>
+
+  <div class="ui segment">
+    <div class="ui dimmer">
+      <div class="ui loader"></div>
+    </div>
+
+    <h3>Results</h3>
+    <div class="ui list">
+      {{#each results}}
+        <div class="item">
+          <a href={{url}}>{{text}}</a>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</template>
